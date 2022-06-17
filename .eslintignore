@@ -1,0 +1,16 @@
+# git
+/.git
+
+# next.js
+/.next/**
+/out/**
+
+# util tools
+/.yarn
+/.husky
+
+# modules
+/node_modules
+
+# eslint
+/.eslintrc.js
