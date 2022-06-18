@@ -20,11 +20,11 @@ const sharedRules = {
   // Since React v17 this can be safely disabled
   'react/react-in-jsx-scope': 'off',
   // Makes sure we don't miss the tests disabled during development
-  // 'jest/no-disabled-tests': 'warn',
+  'jest/no-disabled-tests': 'warn',
   // Makes sure we are only using `.only` when debugging
-  // 'jest/no-focused-tests': 'error',
+  'jest/no-focused-tests': 'error',
   // Enforces different test titles to trace failing tests easily
-  // 'jest/no-identical-title': 'error',
+  'jest/no-identical-title': 'error',
   // Enforces using string instead of object for emotion styling
   // '@emotion/syntax-preference': [2, 'string'],
   // Ensures the vanilla emotions is not used, useful while using React
@@ -120,7 +120,7 @@ module.exports = {
     'eslint:recommended',
   ],
   plugins: [],
-  // plugins: ['@emotion/eslint-plugin'],
+  plugins: ['jest'],
   rules: sharedRules,
   overrides: [{ ...tsConfig }],
 };
