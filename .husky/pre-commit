@@ -1,5 +1,5 @@
-#!/bin/zsh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint && yarn dev
-exit 1
+yarn lint
+# exit 1
