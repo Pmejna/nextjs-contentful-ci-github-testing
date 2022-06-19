@@ -25,8 +25,6 @@ export default class GemDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="preload" href="/fonts/sofia-pro/SofiaProRegular.otf" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/plus-jakarta/PlusJakartaDisplay-Regular.otf" as="font" crossOrigin="" />
         </Head>
         <body>
           <Main />
