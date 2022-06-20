@@ -1,5 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
+import styled from '@emotion/styled';
 
 const Home: NextPage = () => {
   return (
@@ -11,9 +13,24 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+        <h1>Blog Website</h1>
+        <h2>Blog:</h2>
+        <ul>
+          <li>
+            <LinkStyled href="/blog">Blogs</LinkStyled>
+          </li>
+        </ul>
       </main>
     </div>
   )
 }
+
+const LinkStyled = styled(Link)`
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+`;
 
 export default Home

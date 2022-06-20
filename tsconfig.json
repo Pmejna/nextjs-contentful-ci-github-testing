@@ -20,8 +20,17 @@
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "types": ["cypress"]
   },
-  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", "jest.setup.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    "jest.setup.ts",
+    "cypress/**/*.ts",
+    "cypress-axe",
+    "./node_modules/cypress-testing-library"
+  ],
   "exclude": ["node_modules"]
 }
