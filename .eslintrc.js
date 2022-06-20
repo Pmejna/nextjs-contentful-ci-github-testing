@@ -3,6 +3,8 @@ const sharedRules = {
   'no-console': 'warn',
   // Support flexible placement of variables
   'no-use-before-define': 'off',
+
+  'no-unused-vars': 'off',
   // All components should be defined as an arrow functions //
   'react/function-component-definition': [
     'error',
