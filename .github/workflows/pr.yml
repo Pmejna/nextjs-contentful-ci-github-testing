@@ -7,12 +7,13 @@ on:
 
 jobs:
     cypress-run:
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-16.04
       steps:
         - name: Checkout
           uses: actions/checkout@v2
         - name: Cypress run
-          uses: cypress-io/github-action@v2 
+          uses: cypress-io/github-action@v2
           with:
-            build: npm run dev
+            build: npm run build
+            start: npm run start
             wait-on: http://localhost:3000
