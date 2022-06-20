@@ -3,7 +3,7 @@ const sharedRules = {
   'no-console': 'warn',
   // Support flexible placement of variables
   'no-use-before-define': 'off',
-  // All components should be defined as an arrow functions
+  // All components should be defined as an arrow functions //
   'react/function-component-definition': [
     'error',
     {
@@ -121,6 +121,7 @@ module.exports = {
   ],
   plugins: [],
   // plugins: ['@emotion/eslint-plugin'],
+  //s
   rules: sharedRules,
   overrides: [{ ...tsConfig }],
 };
