@@ -24,7 +24,7 @@ jobs:
               ${{ runner.os }}-yarn-
         - name: Install dependencies
           run: yarn install
-        - name: Disable telemetry
-          run: yarn next telemetry disable
+        - name: Run the dev server
+          run: yarn dev
         - name: Cypress run
-          uses: cypress-io/github-action@v2
+          uses: cypress-io/github-action@v4
